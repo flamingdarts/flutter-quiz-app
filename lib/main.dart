@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:quiz_app/drawerMenu.dart';
 import 'package:quiz_app/quiz.dart';
 import 'package:quiz_app/result.dart';
 
@@ -67,6 +68,7 @@ class _QuizAppState extends State<QuizApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+          drawer: DrawerMenu(),
           appBar: AppBar(
             title: Text("Quiz App"),
           ),
